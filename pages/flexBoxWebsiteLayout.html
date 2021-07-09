@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlexBox Website</title>
+<style>
+  * {
+        box-sizing: border-box; 
+  }
+   
+   body {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+  }
+
+        .outer-column-1 {
+            background: #3fb0ac;
+            font-size: 30px;
+            flex: 1;
+        }
+
+        .outer-column-2 {
+            display: flex;
+            flex-direction: column;
+            flex: 6;
+        }
+
+        .inner-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .inner-column {
+            flex: 4;
+        }
+  
+   article {
+    background-color: mintcream;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    
+  }
+  
+  
+  aside {
+    background: beige;
+    flex: 1;
+    font-size: 25px;
+  }
+
+  header,
+   footer {
+       background-color: aqua;
+       font-weight: bold;
+       font-size: 30px;
+       text-align: center;
+    
+  }
+ 
+  header, 
+  footer, 
+  article, 
+  nav, 
+  aside {
+    padding: 1em;
+  }
+    </style>
+</head>
+
+<body>
+    <nav id="outer-column-1">Nav</nav>
+    <div id="outer-column-2">
+    <header>Header</header>
+  <div id="inner-row">
+      <div id="inner-column">
+        <article>
+       <h2>First article</h2> 
+       <p>The Moon is Earth's only natural satellite. At about one-quarter the diameter of Earth (comparable to the width of Australia),It is the largest natural satellite in the Solar System relative to the size of its planet,The fifth largest satellite in the Solar System overall, and is larger than any known dwarf planet.</p>
+        </article>
+        <article>
+            <h2>Second article</h2>
+            <p> The Moon's orbit around Earth has a sidereal period of 27.3 days. During each synodic period of 29.5 days, the amount of visible surface illuminated by the Sun varies from none up to 100%, resulting in lunar phases that form the basis for the months of a lunar calender.</p>
+        </article>
+        <article>
+            <h2>Third article</h2>
+            <p>Earth has just one moon – a rocky, cratered place, roughly a quarter the size of Earth and an average of 238,855 miles away. The Moon can be seen with the naked eye most nights as it traces its 27-day orbit around our planet.</p>
+        </article>
+    <footer>Footer</footer>
+  </div>
+    <aside>Aside</aside>
+        </div>
+    </div>
+</body>
+
+</html>
